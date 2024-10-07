@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/taskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Время начала и окончания задачи -->
+    <TextView
+        android:id="@+id/taskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/taskTitle"/>
+
+    <!-- Дата начала и окончания задачи (если нужно) -->
+    <TextView
+        android:id="@+id/taskDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTime"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+    <ImageView
+        android:id="@+id/taskOptionsMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/more_vert_black"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+    <!-- Описание задачи -->
+    <TextView
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/taskTime"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:focusable="false"
+        android:inputType="none" />
+
+
+</RelativeLayout>

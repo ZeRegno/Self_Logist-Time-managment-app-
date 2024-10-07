@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Поля для ввода информации о задаче -->
+    <EditText
+    android:id="@+id/taskTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Название задачи"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:maxLength="50"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"/>
+
+
+    <EditText
+        android:id="@+id/taskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание задачи"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="5"
+        android:gravity="start|top"
+        android:scrollbars="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/taskTitle"/>
+    <EditText
+        android:id="@+id/starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Стартовое время"
+        android:inputType="text"
+        android:layout_below="@id/taskDescription"
+        android:layout_marginTop="8dp"/>
+    <EditText
+        android:id="@+id/endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Конечное время"
+        android:layout_below="@id/starttime"
+        android:layout_marginTop="8dp"/>
+    <Button
+        android:id="@+id/saveTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="Сохранить задачу"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+
+        android:enabled="true"
+        android:onClick="onSaveTaskClicked" />
+
+</RelativeLayout>

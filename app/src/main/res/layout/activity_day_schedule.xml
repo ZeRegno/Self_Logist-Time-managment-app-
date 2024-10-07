@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Слой для сетки разбиения по времени -->
+    <LinearLayout
+        android:id="@+id/grid_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!-- Слой для отображения задач -->
+    <LinearLayout
+        android:id="@+id/tasks_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:alpha="0.7">
+    </LinearLayout>
+
+</RelativeLayout>
